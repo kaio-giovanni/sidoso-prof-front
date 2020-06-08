@@ -1,5 +1,7 @@
 # S-idoso: Saúde do idoso (Profissionais)
- ![sidoso](app/src/main/res/drawable/sidoso.jpg?raw=true "Title")
+<p align="center">
+ <img src="app/src/main/res/drawable/sidoso.jpg" >
+</p>
 
 ### Descrição do projeto
 
