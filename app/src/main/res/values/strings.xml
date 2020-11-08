@@ -1,3 +1,42 @@
 <resources>
-    <string name="app_name">S-idoso Profissionais</string>
+    <string name="app_name">Profissionals</string>
+    <string name="name_desc">HealthAged Profissional</string>
+    <string name="enter_email">Digite seu email</string>
+    <string name="enter_password">Digite sua senha</string>
+    <string name="login">Login</string>
+    <string name="patient">Pacientes</string>
+    <string name="consultation">Consultas</string>
+    <string name="financial">Financeiro</string>
+    <string name="settings">Configurações</string>
+    <string name="about">Sobre</string>
+    <string name="profissionals">Profissionais</string>
+    <string name="user_email">profissional@sidoso.com</string>
+    <string name="user_name">Profissional teste</string>
+    <string name="cancel">Cancelar</string>
+    <string name="logout">Sair</string>
+    <string name="ok">Ok</string>
+    <string name="you">Você</string>
+    <string name="message">Mensagem</string>
+
+    <string name="desc_about">
+        O aplicativo foi desenvolvido com o intuito de encurtar o relacionamento e acompanhamento dos profissionais de saúde e seus pacientes,
+        promovendo um contato mais informal entre as partes.\n\n
+        <b>Contato com a empresa:</b>\n\n
+            Sinta-se à vontade para nos contatar pelo <i>(xxx) x xxxx-xxxx</i>, ou pelo <i>profissional@sidoso.com</i>.\n\n
+        <b>Redes sociais: </b>\n\n
+            Siga-nos no instagram: <i>\@_sidoso</i>
+    </string>
+
+    <string-array name="list_about_fragment">
+        <item>Contato: <small>sidoso.profissional@gmail.com</small>
+        </item>
+        <item>Instagram: <small>instagram.com/\@_sidoso</small>
+        </item>
+    </string-array>
+
+    <string-array name="list_settings_fragment">
+        <item>Apagar todas as mensagens</item>
+        <!-- <item> Desativar conta-->
+        <item>Sair</item>
+    </string-array>
 </resources>
