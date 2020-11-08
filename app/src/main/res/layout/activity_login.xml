@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom_progress"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_progressbar"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_title"
+        android:text="@string/login"
+        android:textSize="@dimen/text_logo_splash"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:fontFamily="serif"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/name_desc"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_img"
+        android:src="@drawable/screen" />
+
+    <EditText
+        android:id="@+id/et_email_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_form_item"
+        style="@style/AppTheme.EditTextAppearance"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email"
+        android:autofillHints="@string/enter_email" />
+
+    <EditText
+        android:id="@+id/et_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_form_item"
+        style="@style/AppTheme.EditTextAppearance"
+        android:inputType="textPassword"
+        android:hint="@string/enter_password"
+        android:autofillHints="@string/enter_password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_form_item"
+        style="@style/AppTheme.ButtonAppearance"
+        android:text="@string/login"
+        android:padding="@dimen/padding_button" />
+
+</LinearLayout>

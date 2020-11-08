@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="90dp"
+    android:background="@color/colorGreenDark"
+    android:layout_marginTop="@dimen/margin_message_box"
+    android:layout_marginBottom="@dimen/margin_message_box"
+    android:padding="@dimen/margin_message_box"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_author_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:text="@string/you" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="2dp" />
+
+    <TextView
+        android:id="@+id/tv_message_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textStyle="italic"
+        android:gravity="right" />
+
+</LinearLayout>

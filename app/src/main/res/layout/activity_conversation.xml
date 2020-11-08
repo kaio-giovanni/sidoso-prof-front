@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_conversation"
+    tools:context="com.sidoso.profissional.ConversationActivity">
+
+    <include 
+        android:id="@+id/tollbarConversation"
+        layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_conversation"
+        android:layout_below="@id/tollbarConversation"
+        android:layout_above="@+id/ll_conversation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_conversation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+        
+        <EditText
+            android:id="@+id/et_conversation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:hint="@string/message" />
+
+        <ImageButton
+            android:id="@+id/btn_conversation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_send"
+            android:theme="@style/AppTheme.ButtonAppearance" />
+
+    </LinearLayout>
+
+</RelativeLayout>
