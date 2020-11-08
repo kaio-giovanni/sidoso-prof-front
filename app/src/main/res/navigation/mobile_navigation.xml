@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mobile_navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_patients">
+
+    <fragment
+        android:id="@+id/nav_patients"
+        android:name="com.sidoso.profissional.ui.patient.FragmentPatients"
+        android:label="@string/patient"
+        tools:layout="@layout/fragment_patients" />
+
+    <fragment
+        android:id="@+id/nav_consultation"
+        android:name="com.sidoso.profissional.ui.consultation.FragmentConsultation"
+        android:label="@string/consultation"
+        tools:layout="@layout/fragment_consultation" />
+
+    <fragment
+        android:id="@+id/nav_financial"
+        android:name="com.sidoso.profissional.ui.financial.FragmentFinancial"
+        android:label="@string/financial"
+        tools:layout="@layout/fragment_financial" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.sidoso.profissional.ui.settings.FragmentSettings"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.sidoso.profissional.ui.about.FragmentAbout"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
