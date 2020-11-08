@@ -1,4 +1,4 @@
-package com.sidoso.sidosoprof;
+package com.sidoso.profissional;
 
 import org.junit.Test;
 
