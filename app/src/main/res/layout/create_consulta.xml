@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_title_consulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="@style/AppTheme.EditTextAppearance"
+        android:inputType="text"
+        android:hint="@string/title"
+        android:autofillHints="@string/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_date_consulta"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            style="@style/AppTheme.EditTextAppearance"
+            android:inputType="date"
+            android:hint="@string/date"
+            android:autofillHints="@string/date" />
+
+        <EditText
+            android:id="@+id/et_hour_consulta"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            style="@style/AppTheme.EditTextAppearance"
+            android:inputType="time"
+            android:hint="@string/hour"
+            android:autofillHints="@string/hour" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_pacientes"
+        android:autofillHints="@string/patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/et_obs_consulta"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_obs"
+        android:layout_margin="5dp"
+        android:background="@drawable/corner"
+        style="@style/AppTheme.EditTextAppearance"
+        android:inputType="text"
+        android:hint="@string/obs"
+        android:autofillHints="@string/obs" />
+
+</LinearLayout>

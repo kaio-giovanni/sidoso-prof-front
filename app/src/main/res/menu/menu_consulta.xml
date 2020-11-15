@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/consulta_status_concluida"
+            android:title="@string/set_to_concluida" />
+
+        <item
+            android:id="@+id/consulta_status_cancelada"
+            android:title="@string/set_to_cancelada"/>
+</menu>

@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/patient"
             android:scaleType="centerCrop"
-            android:src="@drawable/screen" />
+            android:src="@drawable/default_user" />
 
     </androidx.cardview.widget.CardView>
 

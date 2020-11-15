@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/name_desc"
             android:scaleType="centerCrop"
-            android:src="@drawable/sidoso" />
+            android:src="@drawable/screen" />
 
     </androidx.cardview.widget.CardView>
 

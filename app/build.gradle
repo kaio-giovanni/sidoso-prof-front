@@ -23,6 +23,13 @@ android {
 
 }
 
+repositories {
+    maven {
+        jcenter()
+        url 'https://jitpack.io'
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -34,6 +41,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.2.2'
     implementation 'androidx.navigation:navigation-ui:2.2.2'
     implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation('io.socket:socket.io-client:1.0.0') {
         exclude group: 'org.json', module: 'json'
     }

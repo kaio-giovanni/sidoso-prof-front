@@ -13,6 +13,7 @@
     <dimen name="height_progressbar">10dp</dimen>
     <dimen name="margin_message_box">5dp</dimen>
     <dimen name="card_consulta">210dp</dimen>
+    <dimen name="size_obs">70dp</dimen>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>

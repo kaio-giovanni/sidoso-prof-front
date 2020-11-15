@@ -11,7 +11,7 @@
     <!-- Full Screen -->
     <style name="AppTheme.FullScreen">
         <item name="android:windowFullscreen">true</item>
-        <item name="background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
         <item name="android:windowNoTitle">true</item>
     </style>
 

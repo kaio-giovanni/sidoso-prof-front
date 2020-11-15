@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">Profissionals</string>
+    <string name="app_name">Delivery Health Professionals</string>
     <string name="name_desc">HealthAged Profissional</string>
     <string name="enter_email">Digite seu email</string>
     <string name="enter_password">Digite sua senha</string>
     <string name="login">Login</string>
-    <string name="patient">Pacientes</string>
+    <string name="patient">Paciente</string>
+    <string name="patients">Pacientes</string>
+    <string name="professional">Profissional</string>
     <string name="consultation">Consultas</string>
-    <string name="financial">Financeiro</string>
+    <string name="financial">Estatísticas</string>
     <string name="settings">Configurações</string>
     <string name="about">Sobre</string>
     <string name="profissionals">Profissionais</string>
@@ -16,7 +18,15 @@
     <string name="logout">Sair</string>
     <string name="ok">Ok</string>
     <string name="you">Você</string>
+    <string name="patient_info"> Informações do paciente</string>
     <string name="message">Mensagem</string>
+    <string name="obs">Observações</string>
+    <string name="empty_consultation">Não há nenhuma consulta marcada por aqui.</string>
+    <string name="title"> Título </string>
+    <string name="date">Data</string>
+    <string name="set_to_concluida"> Marcar como concluída </string>
+    <string name="set_to_cancelada"> Marcar como cancelada </string>
+    <string name="hour">Hora</string>
 
     <string name="desc_about">
         O aplicativo foi desenvolvido com o intuito de encurtar o relacionamento e acompanhamento dos profissionais de saúde e seus pacientes,
