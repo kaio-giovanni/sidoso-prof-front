@@ -1,5 +1,8 @@
 package com.sidoso.profissional.model;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Consulta {
     private int id;
     private String title;
@@ -31,6 +34,12 @@ public class Consulta {
 
     public String getDate() {
         return date;
+    }
+
+    public int getMonth(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDateTime date = LocalDateTime.parse(this.date);
+        return date.getMonthValue();
     }
 
     public void setDate(String date) {
@@ -98,5 +107,18 @@ public class Consulta {
 
     public void setLng(Double lng) {
         this.lng = lng;
+    }
+
+    @Override
+    public String toString() {
+        return "Consulta{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", date='" + date + '\'' +
+                ", obs='" + obs + '\'' +
+                ", status='" + status + '\'' +
+                ", lat=" + lat +
+                ", lng=" + lng +
+                '}';
     }
 }

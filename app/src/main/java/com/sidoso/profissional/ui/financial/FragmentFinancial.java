@@ -44,6 +44,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
+import java.util.stream.Collectors;
 
 import static android.content.Context.MODE_PRIVATE;
 import static com.sidoso.profissional.config.Constants.API_URL;
@@ -73,23 +74,18 @@ public class FragmentFinancial extends Fragment {
         xAxis.setPosition(XAxis.XAxisPosition.TOP);
         xAxis.setGranularity(1f);
         xAxis.setGranularityEnabled(true);
-        xAxis.setValueFormatter(new ValueFormatter() {
-            @Override
-            public String getFormattedValue(float value) {
-                return "Total";
-            }
-        });
+//        xAxis.setValueFormatter(new ValueFormatter() {
+//            @Override
+//            public String getFormattedValue(float value) {
+//                return "Total";
+//            }
+//        });
 
         mUserSaved = getContext().getSharedPreferences(FILE_PREFERENCES, MODE_PRIVATE);
 
         if(!requestStarted){
             getConsultas(mUserSaved.getInt("userId", 0), mUserSaved.getString("tokenApi", ""));
         }
-
-        entries = new ArrayList<BarEntry>();
-
-        barChart.animateXY(3000, 3000);
-        barChart.invalidate();
 
         return view;
     }
@@ -144,13 +140,7 @@ public class FragmentFinancial extends Fragment {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     } finally {
-                        consultas = dados;
-                        entries.add(new BarEntry(1, consultas.size(), "N"));
-                        BarDataSet barDataSet = new BarDataSet(entries, "Numero de consultas");
-                        //barDataSet.setDrawValues(true);
-                        BarData barData = new BarData(barDataSet);
-                        barChart.setData(barData);
-                        barChart.notifyDataSetChanged();
+                        makeChart(dados);
                     }
                 }
             }
@@ -213,4 +203,39 @@ public class FragmentFinancial extends Fragment {
             return null;
         }
     }
+
+    private List<Consulta> filterConsultasByMonth(List<Consulta> consultas, int month) {
+        return consultas.stream()
+                .filter(consulta -> consulta.getMonth() == month)
+                .collect(Collectors.toList());
+    }
+
+    private void makeChart(List<Consulta> consultas){
+        BarData data = new BarData();
+        List<BarDataSet> dataSets = new ArrayList<>();
+        BarEntry entry;
+        BarDataSet dataSet;
+
+        System.out.println(consultas);
+
+        String[] months = new String[]{
+                "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"
+        };
+
+        for(int i = 1; i <= 12; i++) {
+            List<BarEntry> entries = new ArrayList<>();
+            List<Consulta> filteredConsultas = filterConsultasByMonth(consultas, i);
+
+            entry = new BarEntry(i, filteredConsultas.size(), months[i -1]);
+            entries.add(entry);
+
+            dataSet = new BarDataSet(entries, months[i -1]);
+            dataSets.add(dataSet);
+            data.addDataSet(dataSet);
+        }
+
+        barChart.setData(data);
+        barChart.invalidate();
+    }
+
 }

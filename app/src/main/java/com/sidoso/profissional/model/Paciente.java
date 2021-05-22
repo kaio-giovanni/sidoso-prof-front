@@ -134,7 +134,6 @@ public class Paciente {
 
         try {
             int userYear = df.parse(this.dt_birth).getYear();
-            System.out.println("currentYear: " + currentYear + " userYear: " + userYear);
             return userYear - currentYear;
         }catch(ParseException e){
             e.printStackTrace();

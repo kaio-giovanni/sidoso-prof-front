@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#023E8A</color>
-    <color name="colorPrimaryDark">#03045E</color>
+    <color name="colorPrimary">#1289EE</color>
+    <color name="colorPrimaryDark">#1225FF</color>
     <color name="colorAccent">#0077B6</color>
     <color name="colorBlack">#212121</color>
     <color name="colorWhite">#FFFFFF</color>
@@ -12,7 +12,7 @@
     <color name="colorGreenLight">#4DB6AC</color>
 
     <!-- nav_header colors gradient -->
-    <color name="endColor">#00296B</color>
+    <color name="endColor">#1225FF</color>
     <color name="centerColor">#003F88</color>
     <color name="startColor">#00509D</color>
 </resources>

@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_patients"
             android:icon="@drawable/ic_account_box_black"
-            android:title="@string/patient" />
+            android:title="@string/patients" />
 
         <item
             android:id="@+id/nav_consultation"
