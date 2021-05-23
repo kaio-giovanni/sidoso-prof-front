@@ -1,5 +1,9 @@
 # Sidoso
 
+<p align="center">
+ <img src="app/src/main/res/drawable/screen.png" >
+</p>
+
 ## Licença 
 * Este aplicativo está sob a licença [Apache License 2.0](https://apache.org/licenses/LICENSE-2.0)
 
